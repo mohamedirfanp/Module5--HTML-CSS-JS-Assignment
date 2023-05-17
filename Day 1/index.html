@@ -1,12 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<html>
+	<head>
+		<title>Portfolio</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="assets/CSS/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<header id="navbar">
+            <div class="nav-bar" >
+                <nav>
+					<span>
+						<a href="#about">About</a> 
+						<a href="#education">Eduction</a> 
+						<a href="#project">Project</a> 
+						<a href="#experiences">Experience</a> 
+						<a href="#skill">Skill</a> 
+					</span>
+			</nav>
+			</div>
+	</header>
+    <main class="main">
+        <section id="about">
+            <div class="flex">
+                <div class="flex-left">
+                    <img class="image" src="data:image/jpeg;base64,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" width="300px" height="300px">
+                </div>
+                <div class="flex-right">
+                    <h1>Mohamed Irfan</h1>
+                    <h3><i>Software Engineer</i></h3>
+                    <p>To pursue a grueling career and be part of a progressive association that provides scope to reinforce my knowledge and my skills to reach the top in the computing and exploration field with sheer determination, fidelity, and hard work.</p>
+                    
+                    <a href="https://www.linkedin.com/in/mohamed-irfan-mdi" class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="https://github.com/MDI-YT" class="icon"><i class="fa fa-github" aria-hidden="true"></i></a>
+                    <a href="mailto:mohamedirfanp3@gmail.com" class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+        <section id="education">
+            <h2>Education</h2>
+            <div class="card-flex">
+                        <div class="card">
     
-</body>
+                            <h3>Bachelor of Engineering in Computer Science and Engineering</h3>
+                            <p><i>Saveetha Engineering College, Chennai, TamilNadu</i></p>
+                            <p>May 2019 - Present</p>
+                            <p>GPA: 9.2</p>
+                        </div>
+                        <div class="card">
+    
+                            <h3>HSC - TN State Board</h3>
+                            <p><i>Seventh-day Adventist Hr.Sec.School, Chennai, TamilNadu</i></p>
+                            <p>May 2018 - May 2019</p>
+                            <p>	Percentage : 76%</p>
+    
+                        </div>
+    
+            </div>
+    
+        </section>
+        <hr>
+    
+        <section id="project" class="project-cards">
+            <h2>Personal Projects</h2>
+                <div class="card">
+                  <h4>Autonomous Self-Driving Car</h4>
+                  <ul type="circle">
+                    <li>Gain experience developing a self-driving car using fascinating techs like Artificial Intelligence and Machine Learning.</li>
+                    <li>In a Nutshell, Familiarity with managing dynamic driving tasks and automatically detecting useful road features using human steering angle as a training signal.</li>
+                    <li>Tools used – Python, Pandas, Tensorflow, Scikit learn.</li>
+                  </ul>
+                </div>
+          </section>
+          
+    
+        <hr>
+        <section id="experiences">
+            <h2>Work Experience</h2>
+
+                <div class="card">
+
+                    <h3>Junior Web developer</h3>
+                    <p>FailSafe Hiring | Remote | Dec 2021 - Feb 2022</p>
+                    <ul>
+                        <li>Developed an E-learning WebApp from Scratch.</li>
+                        <li>I played a vital role as a Full Stack Developer in developing the
+                            WebApp and I helped to deploy it in the server.</li>
+                    </ul>
+                </div>
+        </section>
+        <hr>
+        <section id="skill">
+            <h1>Skills</h1>
+            <article class="card-flex">
+            <div class="card">
+                <div class="card-content">
+                        <h3>Programming Languages</h3>
+                        <p>Python <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span></p>
+                        <p>Angular <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span></p>
+                        <p>C# <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span></p>
+                        <p>Machine Learning <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></span></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                            <h3>Soft Skills</h3>
+                            <p>Problem Solving</p>
+                            <p>Competitive Programming</p>
+                            <p>Team player</p>
+                        </div>
+                    </div>
+            </article>
+            
+        </section>
+        
+        <footer class="footer"></footer>
+
+    </main>
+	</body>
+    <script src="assets/JS/script.js"></script>
 </html>
