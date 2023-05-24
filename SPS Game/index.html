@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS Game</title>
+    <link rel="stylesheet" href="assets/CSS/style.css">
+</head>
+<body>
+    <!-- <article class="popup" id="popup">
+        <div id="winner" class="winner">
+        </div>
+        <button type="button">Close</button>
+    </article> -->
+
+    <main class="main">
+        <h1>Rock Paper Scissors</h1>
+        <h3 style="text-align: end;" id="winner"></h3>
+        <div class="container">
+            <section class="comp">
+                <h3>Computer Score : <span id="compscore"></span></h3>
+                <article class="compside">
+
+                    <div class="card shadow">
+                        <img width="150" height="180" id="img-comp">
+                        <span id="text-comp"></span>
+                    </div>
+                </article>
+            </section>
+            <div class="vl"></div>
+            <section class="user">
+                <h3>User Score : <span id="userscore"></span></h3>
+                <article class="userside">
+                    <div class="card shadow">
+                        <img width="150" height="180" id="img">
+                        <span id="text-choosen"></span>
+                    </div>
+                    <h4>Choose your input:</h4>
+                    <ul class="wrapper" id="choice">
+                        <li class="icon rock">
+                            <a onclick="UserChoice('rock')">
+                                <span class="tooltip">Rock</span>
+                                <span><img src="https://www.svgrepo.com/show/407352/rock.svg" width="35px" height="35px"></span>
+                            </a>
+                        </li>
+                        <li class="icon paper">
+                            <a onclick="UserChoice('paper')">
+                                <span class="tooltip">Paper</span>
+                                <span><img src="https://www.svgrepo.com/show/514187/paper-plane.svg" width="30px" height="35px"></span>
+                            </a>
+                        </li>
+                        <li class="icon scissor">
+                            <a onclick="UserChoice('scissor')">
+
+                                <span class="tooltip">Scissor</span>
+                                <span><img src="https://www.svgrepo.com/show/173989/scissor.svg" width="35px" height="35px"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+        </div>
+        
+    </main>
+
+    <script src="assets/JS/script.js"></script>
+
+</body>
+</html>
